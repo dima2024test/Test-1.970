@@ -10,25 +10,6 @@
         <protected>false</protected>
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
-    <rules>
-        <fullName>TEst WFR</fullName>
-        <actions>
-            <name>Test</name>
-            <type>Task</type>
-        </actions>
-        <active>false</active>
-        <criteriaItems>
-            <field>Case.Origin</field>
-            <operation>notEqual</operation>
-            <value>Email</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Reason</field>
-            <operation>equals</operation>
-            <value>Installation,Equipment Complexity</value>
-        </criteriaItems>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
     <tasks>
         <fullName>Test</fullName>
         <assignedTo>d.yurgelevich@pharos1.970.com</assignedTo>
