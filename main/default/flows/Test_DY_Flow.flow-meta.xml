@@ -1,89 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
-        <description>Source:Get_Accounts,323,176|Target:Create_Opp,431,176</description>
-        <name>h_4c69bfcbcf11a3842f771d76d36dbd9d_PostPreLog</name>
-        <label>Log After: Get Accounts, Before: Create Opp</label>
-        <locationX>176</locationX>
-        <locationY>700</locationY>
-        <actionName>TritonFlow</actionName>
-        <actionType>apex</actionType>
-        <connector>
-            <targetReference>Create_Opp</targetReference>
-        </connector>
-        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
-        <inputParameters>
-            <name>category</name>
-            <value>
-                <stringValue>Flow</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-            <value>
-                <stringValue>test</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>area</name>
-            <value>
-                <stringValue>test</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>summary</name>
-            <value>
-                <stringValue>Log After: Get Accounts, Before: Create Opp</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>details</name>
-            <value>
-                <stringValue>Executed: Log After: Get Accounts, Before: Create Opp</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>interviewGUID</name>
-            <value>
-                <stringValue>{!$Flow.InterviewGuid}</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>flowApiName</name>
-            <value>
-                <stringValue>Test_DY_Flow-1</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>operation</name>
-            <value>
-                <stringValue>Record Lookup</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>level</name>
-            <value>
-                <stringValue>DEBUG</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>stacktrace</name>
-            <value>
-                <stringValue>{!h_8c0369bb7058db7f08fe49e2742100b0_Pharos_Template}</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>fullStacktrace</name>
-            <value>
-                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
-            </value>
-        </inputParameters>
-        <outputParameters>
-            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
-            <name>fullStacktrace</name>
-        </outputParameters>
-    </actionCalls>
-    <actionCalls>
         <description>Source:Start,0,50|Target:Get_Accounts,323,176</description>
         <name>h_5c3ef1c6b6623970c82df3da26d9bd41_PostPreLog</name>
         <label>Log After: Start, Before: Get Accounts</label>
@@ -104,13 +21,13 @@
         <inputParameters>
             <name>type</name>
             <value>
-                <stringValue>test</stringValue>
+                <stringValue>testu</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
             <name>area</name>
             <value>
-                <stringValue>test</stringValue>
+                <stringValue>testu</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -134,7 +51,7 @@
         <inputParameters>
             <name>flowApiName</name>
             <value>
-                <stringValue>Test_DY_Flow-1</stringValue>
+                <stringValue>Test_DY_Flow-3</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -167,11 +84,177 @@
         </outputParameters>
     </actionCalls>
     <actionCalls>
-        <description>Source:Create_Opp,431,176|Target:null,0,0</description>
+        <description>Source:Get_Accounts,323,176|Target:Get_Contacts,431,176</description>
+        <name>h_ca5335fcfb15af6b2d2c27fb3815bc37_PostPreLog</name>
+        <label>Log After: Get Accounts, Before: Get Contacts</label>
+        <locationX>176</locationX>
+        <locationY>700</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_Contacts</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>testu</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>testu</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Get Accounts, Before: Get Contacts</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Get Accounts, Before: Get Contacts</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>Test_DY_Flow-3</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>operation</name>
+            <value>
+                <stringValue>Record Lookup</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>DEBUG</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_246b8f6cff4ea1aa7108ecd88dd5c159_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Get_Contacts,431,176|Target:Create_Opp,539,176</description>
+        <name>h_e0210131620cbfb0c70bd0ce0e06d014_PostPreLog</name>
+        <label>Log After: Get Contacts, Before: Create Opp</label>
+        <locationX>176</locationX>
+        <locationY>1000</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Create_Opp</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>testu</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>testu</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Get Contacts, Before: Create Opp</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Get Contacts, Before: Create Opp</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>Test_DY_Flow-3</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>operation</name>
+            <value>
+                <stringValue>Record Lookup</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>DEBUG</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_0fae439c42c6c4a486b6c64a5c41a2af_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Create_Opp,539,176|Target:null,0,0</description>
         <name>h_ec208eb9e0db86c502383a5be1b43a7b_PostLog</name>
         <label>Log After: Create Opp</label>
         <locationX>176</locationX>
-        <locationY>1000</locationY>
+        <locationY>1300</locationY>
         <actionName>TritonFlow</actionName>
         <actionType>apex</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -184,13 +267,13 @@
         <inputParameters>
             <name>type</name>
             <value>
-                <stringValue>test</stringValue>
+                <stringValue>testu</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
             <name>area</name>
             <value>
-                <stringValue>test</stringValue>
+                <stringValue>testu</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -214,7 +297,7 @@
         <inputParameters>
             <name>flowApiName</name>
             <value>
-                <stringValue>Test_DY_Flow-1</stringValue>
+                <stringValue>Test_DY_Flow-3</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -272,7 +355,7 @@
         <name>Create_Opp</name>
         <label>Create Opp</label>
         <locationX>176</locationX>
-        <locationY>850</locationY>
+        <locationY>1150</locationY>
         <connector>
             <targetReference>h_ec208eb9e0db86c502383a5be1b43a7b_PostLog</targetReference>
         </connector>
@@ -301,7 +384,7 @@
         <locationY>550</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>h_4c69bfcbcf11a3842f771d76d36dbd9d_PostPreLog</targetReference>
+            <targetReference>h_ca5335fcfb15af6b2d2c27fb3815bc37_PostPreLog</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -315,6 +398,19 @@
         <object>Account</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
+    <recordLookups>
+        <name>Get_Contacts</name>
+        <label>Get Contacts</label>
+        <locationX>176</locationX>
+        <locationY>850</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>h_e0210131620cbfb0c70bd0ce0e06d014_PostPreLog</targetReference>
+        </connector>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
@@ -326,6 +422,42 @@
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Draft</status>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Get Contacts, Before: Create Opp</description>
+        <name>h_0fae439c42c6c4a486b6c64a5c41a2af_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;GET RECORDS: &lt;/span&gt;Get Contacts&lt;br&gt;
+&lt;span&gt;Find all Contact records where:&lt;/span&gt;&lt;br&gt;
+
+&lt;span&gt;Store the values of these fields: &lt;/span&gt;&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Result&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Get_Contacts ({!Get_Contacts})&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_e0210131620cbfb0c70bd0ce0e06d014_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Get Accounts, Before: Get Contacts</description>
+        <name>h_246b8f6cff4ea1aa7108ecd88dd5c159_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;GET RECORDS: &lt;/span&gt;Get Accounts&lt;br&gt;
+&lt;span&gt;Find all Account records where:&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Active__c EqualTo Yes&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Store the values of these fields: &lt;/span&gt;&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Result&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Get_Accounts ({!Get_Accounts})&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_ca5335fcfb15af6b2d2c27fb3815bc37_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;</text>
+    </textTemplates>
     <textTemplates>
         <description>Pharos Flow Template for Log After: Create Opp</description>
         <name>h_32240d56fb61e9f7786ee678234a5ea3_Pharos_Template</name>
@@ -361,7 +493,7 @@ span,a {
 &lt;span style=&quot;font-weight:bold;&quot;&gt;Flow Details&lt;/span&gt;&lt;br&gt;
 &lt;br&gt;&lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Flow API Name: &lt;/span&gt;Test_DY_Flow&lt;/span&gt;&lt;br&gt;
 &lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Type: &lt;/span&gt;Flow&lt;/span&gt;&lt;br&gt;
-&lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Version: &lt;/span&gt;2&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Version: &lt;/span&gt;4&lt;/span&gt;&lt;br&gt;
 &lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Status: &lt;/span&gt;Active&lt;/span&gt;&lt;br&gt;
 &lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Org: &lt;/span&gt;{!$Organization.Id} ({!$Organization.Name})&lt;/span&gt;&lt;br&gt;
 &lt;/p&gt;
@@ -380,24 +512,6 @@ span,a {
 &lt;/p&gt;
 &lt;p&gt;
 &lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_5c3ef1c6b6623970c82df3da26d9bd41_PostPreLog&lt;br&gt;
-&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
-&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
-&lt;/p&gt;</text>
-    </textTemplates>
-    <textTemplates>
-        <description>Pharos Flow Template for Log After: Get Accounts, Before: Create Opp</description>
-        <name>h_8c0369bb7058db7f08fe49e2742100b0_Pharos_Template</name>
-        <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>&lt;p&gt;
-&lt;span style=&quot;font-weight:bold;&quot;&gt;GET RECORDS: &lt;/span&gt;Get Accounts&lt;br&gt;
-&lt;span&gt;Find all Account records where:&lt;/span&gt;&lt;br&gt;
-&lt;span&gt;Active__c EqualTo Yes&lt;/span&gt;&lt;br&gt;
-&lt;span&gt;Store the values of these fields: &lt;/span&gt;&lt;br&gt;
-&lt;span style=&quot;font-weight:bold;&quot;&gt;Result&lt;/span&gt;&lt;br&gt;
-&lt;span&gt;Get_Accounts ({!Get_Accounts})&lt;/span&gt;&lt;br&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_4c69bfcbcf11a3842f771d76d36dbd9d_PostPreLog&lt;br&gt;
 &lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
 &lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
 &lt;/p&gt;</text>

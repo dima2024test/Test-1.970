@@ -22,7 +22,7 @@
  */
 public class RuleExportImportService {
     
-    // system fields to exclude from export
+    // system fields to exclude from export TEST UPDATE
     public static final Set<String> SYSTEM_FIELDS = new Set<String>{
         'id', 'isdeleted', 'createddate', 'createdbyid', 'lastmodifieddate', 
         'lastmodifiedbyid', 'systemmodstamp', 'lastactivitydate', 'lastvieweddate', 
@@ -360,7 +360,7 @@ public class RuleExportImportService {
                 insert filtersToInsert;
             }
 
-            // Insert rule actions
+            // Insert rule actions 
             if(!ruleActionsToInsert.isEmpty()) {
                 System.debug('### IMPORT - Inserting ' + ruleActionsToInsert.size() + ' rule actions');
                 insert ruleActionsToInsert;

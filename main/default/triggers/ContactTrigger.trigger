@@ -5,7 +5,7 @@ trigger ContactTrigger on Contact (before insert, before update) {
             con.FirstName = 'Default First Name';
         }
         
-        // Optionally set LastModifiedById (usually handled by Salesforce)
+        // Optionally set LastModifiedById (usually handled by Salesforce) TEST UPDATE
         con.MailingStreet = UserInfo.getUserId();
     }
 }
