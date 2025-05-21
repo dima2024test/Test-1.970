@@ -2,6 +2,6 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Test_VR_CO</fullName>
     <active>true</active>
-    <errorConditionFormula>CONTAINS( Name , &apos;test&apos;)</errorConditionFormula>
+    <errorConditionFormula>CONTAINS( Name , &apos;testupdate&apos;)</errorConditionFormula>
     <errorMessage>Error VR CO</errorMessage>
 </ValidationRule>
